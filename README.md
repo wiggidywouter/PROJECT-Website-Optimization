@@ -1,5 +1,23 @@
 ## Website Performance Optimization portfolio project
+### My changes
+#### Part 1: Optimize PageSpeed Insights score for index.html
 
+- Changed image to pizzeria-thumb.jpg
+- Added async attribute to blocking analytics.js script.
+- Replaced blocking css (link to googlefonts) with an async script to load googlefont.
+- Inlined essential css. Conditional css gets loaded async by appending a link tag to <head>.
+- Optimized all .jpeg and .png images.
+- Similar optimalization steps for project-2048.html
+- Similar optimalization steps for project-webperf.html
+- Similar optimalization steps for project-mobile.html
+
+#### Part 2: Optimize Frames per Second in pizza.html
+- Optimized scroll performance. Placed read of scrollTop (document.body.scrollTop) outside for loop.
+- Optimized time to resize pizza. Placed new (pizza) width calculation outside for loop that iterates through all pizzas and changes its size.
+- Improved initial page load by resizing pizzeria.jpg.
+- Small improvement: time to generate pizzas on load. Placed the document.getElementById("randomPizzas") outside for loop.
+
+### Udacity project info:
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository, inspect the code,
