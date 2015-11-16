@@ -3,9 +3,10 @@
 #### Part 1: Optimize PageSpeed Insights score for index.html
 
 - Replaced pizzeria.jpg with resized pizzeria-thumb.jpg
-- Added async attribute to blocking analytics.js script.
+- Added async attribute to blocking scripts (analytics.js).
+- Added attribute: media='print' to link tag for print.css.
 - Replaced blocking css (link to googlefonts) with an async script to load googlefont.
-- Inlined essential css. Conditional css gets loaded async (by appending a link-tag to head).
+- Inlined critical css. Conditional css (@media...) gets loaded async (by appending a link-tag to head).
 - Optimized all .jpeg and .png images.
 - Similar optimalization steps for project-2048.html, project-webperf.html and project-mobile.html
 
